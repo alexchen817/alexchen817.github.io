@@ -1,35 +1,125 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/App.css'
+import { useEffect, useMemo, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
+const App = () => {
+    const [init, setInit] = useState(false);
+    // this should be run only once per application lifetime
+    useEffect(() => {
+        initParticlesEngine(async (engine) => {
+            await loadSlim(engine);
+        }).then(() => {
+            setInit(true);
+        });
+    }, []);
 
-function App() {
-  const [count, setCount] = useState(0)
+    const particlesLoaded = (container) => {
+        console.log("Particles loaded:", container);
+    };
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    const options = useMemo(
+        () => ({
+            background: {
+                color: {
+                    value: "#253237",
+                },
+            },
+            fpsLimit: 120,
+            interactivity: {
+                events: {
+                    onClick: {
+                        enable: true,
+                        mode: "push",
+                    },
+                    onHover: {
+                        enable: true,
+                        mode: "grab",
+                    },
+                    resize: true,
+                },
+                modes: {
+                    push: {
+                        quantity: 4,
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4,
+                    },
+                    grab: {
+                        distance: 200,
+                        links: {
+                            blink: false,
+                            consent: false,
+                            opacity: 1,
+                        },
+                    }
+                },
+            },
+            particles: {
+                color: {
+                    value: ["#333333", "#444444", "#555555"],
+                },
+                links: {
+                    color: "#E0FBFC",
+                    distance: 150,
+                    enable: true,
+                    opacity: 0.3,
+                    width: 1,
+                },
+                move: {
+                    direction: "none",
+                    enable: true,
+                    outModes: {
+                        default: "bounce",
+                    },
+                    random: false,
+                    speed: 2,
+                    straight: false,
+                },
+                number: {
+                    density: {
+                        enable: true,
+                        area: 50,
+                    },
+                    value: 180,
+                },
+                opacity: {
+                    value: 0.6,
+                },
+                shape: {
+                    type: "circle",
+                },
+                size: {
+                    value: { min: 1, max: 4 },
+                },
+            },
+            detectRetina: true,
+        }),
+        [],
+    );
+
+    if (!init) {
+        return <div>Loading particles...</div>;
+    }
+    return (
+        <>
+            <div style={{ position: 'fixed', width: '100vw', height: '100vh' }}>
+                <Particles
+                    id="tsparticles"
+                    particlesLoaded={particlesLoaded}
+                    options={options}
+                    style={{
+                        position: 'fixed',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        zIndex: -1,
+                    }}
+                />
+            </div>
+        </>
+
+    );
 }
-
-export default App
+export default App;
