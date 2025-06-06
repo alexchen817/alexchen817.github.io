@@ -2,6 +2,7 @@ import './styles/App.css'
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import Hero from './components/Hero';
 const App = () => {
     const [init, setInit] = useState(false);
     // this should be run only once per application lifetime
@@ -103,6 +104,7 @@ const App = () => {
     }
     return (
         <>
+
             <div style={{ position: 'fixed', width: '100vw', height: '100vh' }}>
                 <Particles
                     id="tsparticles"
@@ -118,6 +120,7 @@ const App = () => {
                     }}
                 />
             </div>
+            <Hero />
         </>
 
     );
