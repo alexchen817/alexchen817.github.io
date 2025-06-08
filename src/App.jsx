@@ -4,6 +4,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import Hero from './components/Hero';
 import NavBar from './components/NavBar';
+import Tools from './components/Tools';
 const App = () => {
     const [init, setInit] = useState(false);
     // this should be run only once per application lifetime
@@ -122,6 +123,7 @@ const App = () => {
                 />
             </div>
             <Hero />
+            <Tools />
         </>
 
     );
