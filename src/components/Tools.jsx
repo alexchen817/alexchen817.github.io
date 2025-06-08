@@ -28,7 +28,7 @@ export default function Tools() {
                     alt='Vercel icon' />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
                     alt='Next.js icon' />
-                <img src={PROS} height="150px" width="150px" />
+                <img src={PROS} height="150px" width="150px" alt='PROS API icon' />
             </div>
         </>
     );
