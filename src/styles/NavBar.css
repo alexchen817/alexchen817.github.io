@@ -1,0 +1,20 @@
+.navbar {
+    position: fixed;
+    z-index: 1;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    font-size: large;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.navbar a:link {
+    text-decoration: none;
+}
