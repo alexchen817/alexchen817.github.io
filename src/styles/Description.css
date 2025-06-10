@@ -1,0 +1,12 @@
+.description-box {
+    width: 65vw;
+    padding: 25px;
+    background-color: rgba(211, 211, 211, 0.1);
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
