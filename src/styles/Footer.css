@@ -1,0 +1,16 @@
+.footer-style {
+    position: relative;
+    width: 100vw;
+    z-index: 1000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+}
+
+.footer-style img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
