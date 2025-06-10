@@ -1,19 +1,46 @@
-.layout {
+.about-container {
     position: relative;
     z-index: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 100px;
     height: 100vh;
 }
 
-.text {
+.about-layout {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.about-text-box {
+    width: 500px;
+    padding: 25px;
+    background-color: rgba(211, 211, 211, 0.1);
+    border-radius: 20px;
+    position: relative;
+}
+
+
+.overlay-text {
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #FFFFFF;
     font-family: 'Nunito', sans-serif;
 }
 
 .title {
     font-weight: 500;
     font-size: 3.5rem;
+}
+
+.image {
+    border-radius: 50%;
+    max-width: 30%;
 }
