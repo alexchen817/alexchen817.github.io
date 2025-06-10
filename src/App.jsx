@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import Tools from './components/Tools';
 import About from './components/About';
 import Footer from './components/Footer';
+import Experience from './components/Experience';
 const App = () => {
     const [init, setInit] = useState(false);
     // this should be run only once per application lifetime
@@ -126,6 +127,7 @@ const App = () => {
             </div>
             <Hero />
             <About />
+            <Experience />
             <Tools />
             <Footer />
         </>
