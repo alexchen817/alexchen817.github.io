@@ -8,7 +8,6 @@ export default function NavBar() {
             <a href='#experience'>Experience</a>
             <a href='#tools'>Tools/Technologies</a>
             <a href='#projects'>Projects</a>
-            <a href='#awards'>Awards</a>
             <a href={Resume} target='_blank'>Resume</a>
         </nav>
     );
