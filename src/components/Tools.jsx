@@ -1,4 +1,4 @@
-import PROS from '../assets/PROS.png'
+import PROS from '../assets/PROS.svg'
 import '../styles/Tools.css'
 export default function Tools() {
     return (
@@ -28,7 +28,7 @@ export default function Tools() {
                     alt='Vercel icon' />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
                     alt='Next.js icon' />
-                <img src={PROS} height="150px" width="150px" alt='PROS API icon' />
+                <img src={PROS} height="156px" width="160px" alt='PROS API icon' />
             </div>
         </>
     );
