@@ -1,5 +1,5 @@
 import '../styles/Footer.css'
-
+import emailLogo from '../assets/emailLogo.svg'
 export default function Footer() {
     return (
         <footer className='footer-style'>
@@ -12,9 +12,10 @@ export default function Footer() {
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
                     alt='Linkedin icon' />
             </a>
-            <a href='#about'>
-
+            <a href="mailto:aca343@sfu.ca" target="_blank">
+                <img src={emailLogo}
+                    alt='Mail icon' />
             </a>
-        </footer>
+        </footer >
     );
 }
