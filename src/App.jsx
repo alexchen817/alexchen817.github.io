@@ -27,7 +27,7 @@ const App = () => {
         () => ({
             background: {
                 color: {
-                    value: "#253237",
+                    value: "#f2f2f2",
                 },
             },
             fpsLimit: 120,
@@ -63,10 +63,10 @@ const App = () => {
             },
             particles: {
                 color: {
-                    value: ["#333333", "#444444", "#555555"],
+                    value: "#8B5CF6",
                 },
                 links: {
-                    color: "#E0FBFC",
+                    color: "#655A7C",
                     distance: 150,
                     enable: true,
                     opacity: 0.3,
@@ -79,18 +79,18 @@ const App = () => {
                         default: "bounce",
                     },
                     random: false,
-                    speed: 2,
+                    speed: 0.5,
                     straight: false,
                 },
                 number: {
+                    value: 60,
                     density: {
                         enable: true,
-                        area: 50,
+                        area: 800,
                     },
-                    value: 180,
                 },
                 opacity: {
-                    value: 0.6,
+                    value: 0.2,
                 },
                 shape: {
                     type: "circle",
