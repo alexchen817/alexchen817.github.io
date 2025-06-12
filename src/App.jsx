@@ -8,6 +8,7 @@ import Tools from './components/Tools';
 import About from './components/About';
 import Footer from './components/Footer';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
 const App = () => {
     const [init, setInit] = useState(false);
     // this should be run only once per application lifetime
@@ -129,6 +130,7 @@ const App = () => {
             <About />
             <Experience />
             <Tools />
+            <Projects />
             <Footer />
         </>
 
