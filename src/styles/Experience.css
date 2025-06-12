@@ -8,9 +8,16 @@
     padding-bottom: 300px;
 }
 
-div h2 {
+.experience-layout h2 {
     font-family: 'Open Sans', sans-serif;
     color: #000000;
     font-weight: 500;
     font-size: 1.8rem;
+}
+
+.experience-layout h1 {
+    font-weight: 500;
+    font-size: 3.5rem;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
 }
