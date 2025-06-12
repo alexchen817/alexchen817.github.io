@@ -36,3 +36,10 @@ div h2 {
     font-size: 1.8rem;
     text-align: center;
 }
+
+.projects-box h1 {
+    font-weight: 500;
+    font-size: 3.5rem;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+}

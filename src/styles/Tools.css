@@ -11,7 +11,11 @@
     padding-bottom: 20px;
 }
 
-h1 {
+#tools {
+    scroll-margin-top: 100px;
+}
+
+.tool-layout h1 {
     position: relative;
     z-index: 0;
     display: flex;
