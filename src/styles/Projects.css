@@ -1,0 +1,38 @@
+.projects-box {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 300px;
+    height: 80vh;
+}
+
+#projects {
+    scroll-margin-top: 80px;
+}
+
+.project-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-header img {
+    padding: 10px;
+}
+
+div a {
+    position: relative;
+}
+
+div h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: center;
+}
