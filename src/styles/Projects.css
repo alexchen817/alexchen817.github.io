@@ -6,12 +6,8 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 300px;
-    height: 80vh;
 }
 
-#projects {
-    scroll-margin-top: 80px;
-}
 
 .project-header {
     position: relative;
