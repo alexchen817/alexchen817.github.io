@@ -3,15 +3,15 @@ import openNewTabIcon from '../assets/openNewTabIcon.svg';
 import '../styles/Projects.css'
 
 export default function Projects() {
-    const flowDescription = `FlowSense is a mobile app made with React Native + Expo that connects 
+    const flowDescription = `FlowSense is a mobile app built with React Native + Expo that connects 
           to a smart device via Bluetooth to monitor real-time water usage. 
           It helps users understand their freshwater consumption and promotes sustainable habits through 
           live data visualization and insights.`;
-    const portfolioDescription = `This personal portfolio showcases my projects, tools, and experience
-          as a developer. I built this website with Vite + React, and deployed ot with Github Pages.`;
-    const hackathonDescription = `SystemHacks is an annual computer science hackathon that brings together
+    const portfolioDescription = `My personal portfolio showcases my projects, tools, and experience
+          as a developer. I built this website with Vite + React, and deployed it with Github Pages.`;
+    const hackathonDescription = `SystemHacks is an annual hackathon that brings together
           over 200 participants to innovate and collaborate on tech solutions. I developed the event 
-          website using HTML, CSS, and JavaScript to provide a smooth and engaging user experience.`;
+          website using HTML, CSS, and JavaScript.`;
     return (
         <div className='projects-box' id='projects'>
             <h1>

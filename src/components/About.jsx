@@ -10,7 +10,7 @@ export default function About() {
                     <p className='overlay-text'>
                         Hi, I’m Alex, a software developer with a passion for creating practical,
                         user-focused solutions. I am currently building web applications using React,
-                        Node.js, and Firebase, and I plan to learn Kotlin in the near future.
+                        Next.js, and Firebase, and I plan to learn Kotlin in the near future.
                         My journey into tech started with competitive robotics, where I competed at the
                         VEX Worlds Championship in high school and discovered a love for embedded systems
                         and problem-solving under pressure. Since then, I’ve expanded into web development
