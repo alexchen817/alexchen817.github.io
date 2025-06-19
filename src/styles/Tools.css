@@ -26,3 +26,9 @@
     font-weight: 500;
     font-size: 3.5rem;
 }
+
+.icon-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
